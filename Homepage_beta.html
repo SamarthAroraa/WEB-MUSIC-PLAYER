@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Flowplayer</title>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/71732c9d38.js" crossorigin="anonymous"></script>
 </head>
@@ -42,7 +43,7 @@
 			</ul>
 		</nav>
 <section class="search-section">
-	<input type="text" placeholder="Search for Artists, Songs and Podcasts and more...">
+	<input type="text" placeholder="Search for Artists, Songs,Podcasts and more...">
 
 	<span id="or" class="hide">&nbsp; &nbsp; &nbsp;or</span>
 	<div class="surprise-button hide">
@@ -52,23 +53,194 @@
 </header>
 		<!-- This section ecloses the search bar and the surprise me button which plays a song that our algorithm cherrypicks for the user based on their tastes! -->
 
-
-<main>
+<div class="content-container">
+<main class="main-section">
 
 		<!-- radio section to play random songs from a particular artist/genre -->
-		<section class="radio-bar">
+		<!-- <span id="radio-nav"></span> -->
+		<section class="main-bar" id="radio-bar">
+			<div class="icon">
+				<img src="radio-21176.png" id="radio-icon">
+				<span class="heading">
+					Radio
+				</span>
+			</div>
+			<div class="icon one">
+				<img src="https://c.saavncdn.com/editorial/DrivetimeTunes_80x80.jpg" id="indie-icon" alt="indie-icon">
+				<span class="item-name">
+					Indie Music
+				</span>
+			</div>
+			<div class="icon two">
+				<img src="https://c.saavncdn.com/artists/Arijit_Singh_80x80.jpg" id="arijit-icon" alt="arijit-icon">
+				<span class="item-name">
+					Arijit Singh
+				</span>
+			</div>
+			<div class="icon three">
+				<img src="https://c.saavncdn.com/artists/Lata_Mangeshkar_002_20200212082631_80x80.jpg" id="lata-icon" alt="lata-icon">
+				<span class="item-name">
+					Lata Mangeshkar
+				</span>
+			</div>
+			<div class="icon four">
+				<img src="https://c.saavncdn.com/artists/Pink_Floyd_150x150.jpg" id="pinkfl-icon" alt="pink floyd icon">
+				<span class="item-name">
+					Pink Floyd
+				</span>
+			</div>
+			<div class="icon five">
+				<img src="https://c.saavncdn.com/artists/The_Beatles_150x150.jpg" id="beetles-icon" alt="beetles-icon">
+				<span class="item-name">
+				Beetles
+				</span>
+			</div>
 
 		</section>
 
-</main>
+
+
+
+</main >
 
 
 	<!-- aside section on the right which contains song queue -->
 	<aside class="queue-bar">
-	</aside>
+		<div class="queue-wrapper">
+			<div class="aside-heading" id="queue-heading">
+				<h4>Queue</h4>
+			</div>
+				<div class="song-container">
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+		</div>
+</div>
+<div class="recently-wrapper">
+	<div class="aside-heading" id="recently-p">
+		<h4>Recently Played</h4>
+	</div>
+		<div class="song-container">
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+		</div>
+</div>
 
+<div class="suggestions-wrapper">
+	<div class="aside-heading" id="suggestions">
+		<h4>Suggestions</h4>
+	</div>
+		<div class="song-container">
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+			<div class="song">
+				<p>
+				</p>
+			</div>
+		</div>
 
+	</div>
+</aside>
 
+<section class="bottom-playbar">
+	<div class="song">
+		<p>
+		</p>
+	</div>
 
+	<div class="music-navigation-panel">
+		<div id="shuffle-button">
+			<i class="fas fa-random"></i>
+		</div>
+
+		<div id="back-button">
+			<i class="fas fa-step-backward"></i>
+		</div>
+
+		<div id="play-button">
+			<i class="fas fa-play"></i>
+		</div>
+
+		<div id="fwd-button">
+			<i class="fas fa-step-forward"></i>
+		</div>
+
+		<div id="loop-button">
+			<i class="fas fa-redo-alt"></i>
+		</div>
+
+	</div>
+	<div class="progress-bar">
+		<div class="progress">
+			<div class="circle">
+				<i class="fas fa-circle"></i>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+</div>
 </body>
 </html>
