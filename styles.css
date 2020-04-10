@@ -551,6 +551,13 @@ aside .song-container{
 	flex-direction: column;
 	justify-content: space-around;
 }
+aside .song-container2{
+	display:flex;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	flex-direction: column;
+	justify-content: space-around;
+}
 .aside-heading{
 	width: 100%;
 	/* background-color:var(--highlight2-white); */
@@ -614,21 +621,38 @@ aside .song-container p{
 }
 aside .song-container p i{
 	font-size: 1.2rem;
-	margin-left: 12px;
+	margin-left: 70px;
 	color: white;
 }
-.progress .fa-circle{
-	color: var(--bright-white);
-	/* box-shadow: 2px 2px 4px grey; */
-	border-radius: 50%;
-	filter: drop-shadow(-2px -2px 4px #grey);
-	font-size: 1.3rem;
-	position: relative;
- 	bottom:9px;
-	left:90%;
-	/* display: none; */
-	/* z-index: 3; */
+aside .song-container2 p::before{
+	content: '';
+	background-image: url("https://c.saavncdn.com/843/Colores-Spanish-2020-20200318230420-500x500.jpg");
+	background-size: 20px 20px;
+	display: inline-block;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 8px;
+	width:40px;
 }
+aside .song-container2 p span{
+	margin-bottom:10px;
+}
+
+aside .song-container2 p{
+	margin-left: 12px;
+	margin-top: 5px;
+	color: white;
+	font-size: 1.5rem;
+	/* padding: 4px; */
+	/* margin-bottom: 13px; */
+}
+aside .song-container2 p i{
+	font-size: 1.2rem;
+	margin-left: 70px;
+	color: white;
+}
+
 /* //////////////////////////////////////////////////////////////////// */
 /* bottom play bar */
 
@@ -644,11 +668,11 @@ aside .song-container p i{
 .bottom-playbar .song{
 	width: 300px;
 	min-width: 300px;
-	height: 90%;
-	background-color: var(--highlight-purple);
+	height: 100%;
+	/* background-color: var(--highlight-purple); */
 	position: relative;
 	left: 6px;
-	bottom:6px;
+	bottom:0px;
 }
 
 .bottom-playbar .music-navigation-panel{
@@ -685,6 +709,61 @@ color: var(--hover-purple2);
 	bottom: 30px;
 	left:900px;
 	z-index: 2;
+}
+#albumart{
+	height: 55px;
+	width:55px;
+	border-radius: 4px;
+	position: relative;
+	top:4px;
+	left:6px;
+}
+#song-name #artist{
+	color: grey
+}
+#song-name{
+	height: 55px;
+	line-height: 55px;
+	width: 80%;
+	/* background-color: pink; */
+	position: relative;
+	bottom: 50px;
+	font-size: 1.5rem;
+	left:80px;
+}
+#song-name:hover{
+	text-decoration: underline;
+}
+#song-name i:hover{
+	color: var(--highlight-purple);
+	text-decoration: none;
+}
+
+#song-name i{
+margin-left: 50px;
+}
+
+#albumart img{
+	height: 100%;
+	width:100%;
+	transition: 0.1s ease-out;
+}
+#albumart img:hover{
+transform: scale(1.1);
+}
+
+
+.progress .fa-circle{
+	color: var(--bright-white);
+	/* box-shadow: 2px 2px 4px grey; */
+	border-radius: 50%;
+	filter: drop-shadow(-2px -2px 4px #grey);
+	font-size: 1.3rem;
+	position: relative;
+ 	bottom:9px;
+	left:90%;
+	/* display: none; */
+	/* z-index: 3; */
 }
 .progress{
 	border-radius: 20px;
