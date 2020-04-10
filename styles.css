@@ -171,6 +171,7 @@ header nav{
 .dropbtn {
   color: var(--highlight-purple);
   background-color: var(--highlight2-white);
+  /* display: none; */
   padding: 0px 16px;
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
@@ -179,6 +180,7 @@ header nav{
 .dropdown {
   position: relative;
   display: inline-block;
+  width:auto;
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -364,7 +366,8 @@ main .heading{
 	width: auto;
 	/* margin-top:40px; */
 	/* margin-right: -50px; */
-	line-height: 1rem;
+	line-height: 1.5rem;
+	text-align: center;
 	/* color: bl; */
 	/* margin-left: 27px; */
 	/* letter-spacing: 0.2rem; */
@@ -384,7 +387,7 @@ main .heading{
 	height: 300px;
 	width: 300px;
 }
-#carousel-heading{
+.sec-head h2{
 	font-size: 2.8rem;
 	font-weight: 500;
 	color: white;
@@ -392,16 +395,17 @@ main .heading{
 	margin:0;
 	transition: 0.5s ease-in-out;
 	transform: translateX(4%);
+	text-transform: uppercase;
 
 }
-#carousel-heading:hover{
-letter-spacing: 1rem;
+.sec-head h2:hover{
+letter-spacing: 0.6rem;
 transform: translateX(2%);
 }
 #carousel .image-wrapper:hover{
 	height: 500px;
 	width: 500px;
-	z-index:
+	/* z-index: */
 }
 .carousel-title{
 	font-size: 2rem;
@@ -471,21 +475,52 @@ body {
   top: 15px;
 }
 .card img{
+
 	height: 250px;
 	width: 250px;
 	margin: 5px;
 	border-radius: 10px;
 }
+.chart-container{
+	height: 200px;
+	width: 200px;
+	margin: 16px;
+	margin-top:-40px;
+	transition: 0.4s ease-out;
 
-#c-more{
-	color: black;
-	font-size: 1rem;
-	float: right;
+}
+#top-charts{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 400px;
+	margin-bottom: 0px;
+}
+#top-charts img{
+	margin-top: -80px;
+height: 100%;
+box-shadow: -1px 0 3rem #000;
+width:100%;
+}
+.chart-container:hover{
+	transform: scale(1.2);
+}
+.chart-box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-right: -20px;
 }
 
-
-
-
+.chart-box .item-name{
+	margin-left: 40px;
+	font-size: 1.5rem;
+	margin-right: 40px;
+}
+#top-charts .sec-head{
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(177,26,33,1) 100%);
+}
 /* //////////////////////////////////////////////////////////////////////////////// */
 
 /* playing queue on right */
@@ -548,7 +583,51 @@ color: var(--hover-purple2);
 	width: 90%;
 	margin:auto;
 	margin-top: 3px;
+	line-height: 50px;
+	/* padding: 20px */
+	/* vertical-align:; */
+
 	background-color: var(--highlight-purple);
+}
+aside .song-container p::before{
+	content: '';
+	background-image: url("https://c.saavncdn.com/455/Toosie-Slide-English-2020-20200403041704-500x500.jpg");
+	background-size: 20px 20px;
+	display: inline-block;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 8px;
+	width:40px;
+}
+aside .song-container p span{
+	margin-bottom:10px;
+}
+
+aside .song-container p{
+	margin-left: 12px;
+	margin-top: 5px;
+	color: white;
+	font-size: 1.5rem;
+	/* padding: 4px; */
+	/* margin-bottom: 13px; */
+}
+aside .song-container p i{
+	font-size: 1.2rem;
+	margin-left: 12px;
+	color: white;
+}
+.progress .fa-circle{
+	color: var(--bright-white);
+	/* box-shadow: 2px 2px 4px grey; */
+	border-radius: 50%;
+	filter: drop-shadow(-2px -2px 4px #grey);
+	font-size: 1.3rem;
+	position: relative;
+ 	bottom:9px;
+	left:90%;
+	/* display: none; */
+	/* z-index: 3; */
 }
 /* //////////////////////////////////////////////////////////////////// */
 /* bottom play bar */
@@ -620,18 +699,7 @@ color: var(--hover-purple2);
 	left:0px;
 	z-index: 2;
 }
-.progress .fa-circle{
-	color: var(--bright-white);
-	/* box-shadow: 2px 2px 4px grey; */
-	border-radius: 50%;
-	filter: drop-shadow(-2px -2px 4px #grey);
-	font-size: 1.3rem;
-	position: relative;
- 	bottom:9px;
-	left:90%;
-	/* display: none; */
-	/* z-index: 3; */
-}
+
 /* .progress-bar .circle:ho{
 	display: none;
 } */

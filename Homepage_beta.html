@@ -28,12 +28,21 @@
 					<!-- dropdown menu -->
 				<li>
 					<div class="dropdown">
-					  <button class="dropbtn">Browse<i class="fas fa-chevron-down" style="font-size:1.5rem;"></i></button>
-					  <div class="dropdown-content">
-					    <a href="#">Link 1</a>
-					    <a href="#">Link 2</a>
-					    <a href="#">Link 3</a>
-					  </div>
+					  <select id="dropdown-menu"class="dropbtn">
+						  <option value="default">
+						  Browse<i class="fas fa-chevron-down" style="font-size:1.5rem;"></i>
+					  	</option>
+						<div class="dropdown-content">
+							<option value="Featured-Playlists">Featured-Playlists</option>
+	  					  <option value="Top-Artists">Top-Artists</option>
+	  					  <option value="New-Releases">New-Releases</option>
+	  					  <option value="Weekly-Top-Songs">Weekly-Top-Songs</option>
+	  					  <option value="All-Albums">All-Albums</option>
+	  					  <option value="Surprise-me">Surprise Me!</option>
+  					  	</div>
+
+					  </select>
+
 					</div>
 				</li>
 				<li><a href="#">My Music</a></li>
@@ -44,7 +53,7 @@
 			</ul>
 		</nav>
 <section class="search-section">
-	<input type="text" placeholder="Search for Artists, Songs,Podcasts and more...">
+	<input type="text" placeholder="Search for Artists, Songs, Podcasts and more...">
 
 	<span id="or" class="hide">&nbsp; &nbsp; &nbsp;or</span>
 	<div class="surprise-button hide">
@@ -60,13 +69,9 @@
 
 <!-- CAROUSEL SECTION -->
 	<section class="main-bar" id="carousel">
-		<div class="sec-head"><h2  id="carousel-heading">The Hottest New Albums!</h2></div>
+		<div class="sec-head"><h2  id="carousel-heading">The Hottest New Albums</h2></div>
 		<div class="container">
-		  <div class="card one">
-		    <h3 class="title">Changes-Justin Bieber</h3>
-			<img src="https://c.saavncdn.com/818/Changes-English-2020-20200214135638-500x500.jpg">
 
-		  </div>
 		  <div class="card two">
 		    <h3 class="title">After Hours - The Weeknd</h3>
 		    <img src="https://c.saavncdn.com/940/After-Hours-Deluxe--English-2020-20200330040950-500x500.jpg">
@@ -79,6 +84,11 @@
 		    <h3 class="title">Future Nostalgia - Dua Lipa</h3>
 		    <img src="https://c.saavncdn.com/118/Future-Nostalgia-English-2020-20200327130717-500x500.jpg">
   			</div>
+			<div class="card one">
+  		    <h3 class="title">Changes-Justin Bieber</h3>
+  			<img src="https://c.saavncdn.com/818/Changes-English-2020-20200214135638-500x500.jpg">
+
+  		  </div>
 		</div>
 </section>
 		<section class="main-bar" id="radio-bar">
@@ -122,8 +132,38 @@
 		</section>
 
 
-		<section class="main-bar" ></section>
-			<section class="main-bar"></section>
+		<section class="main-bar" id="top-charts">
+			<div class="sec-head">
+				<h2  id="carousel-heading">Weekly Top Charts</h2>
+			</div>
+			<div class="chart-box">
+				<div class="chart-container">
+					<img src="top50.png" >
+					<h3 class="item-name">
+						India Top 50
+					</h3>
+				</div>
+				<div class="chart-container">
+					<img src="global50.png" >
+					<h3 class="item-name">
+						Global Top 50
+					</h3>
+				</div>
+				<div class="chart-container">
+					<img src="alternative.png" >
+					<h3 class="item-name">
+						New & hot: Alternative Rock
+					</h3>
+				</div>
+				<div class="chart-container">
+					<img src="dubstep.png" >
+					<h3 class="item-name">
+						New & hot: Dubstep
+					</h3>
+				</div>
+			</div>
+
+		</section>
 
 
 
@@ -138,27 +178,39 @@
 			</div>
 				<div class="song-container">
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 		</div>
@@ -169,27 +221,39 @@
 	</div>
 		<div class="song-container">
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 		</div>
@@ -201,27 +265,39 @@
 	</div>
 		<div class="song-container">
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 			<div class="song">
-				<p>
+				<p><span>
+					Song Name-Artist<i class="far fa-heart"></i>
+				</span>
 				</p>
 			</div>
 		</div>
