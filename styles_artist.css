@@ -1,0 +1,574 @@
+@media screen and (max-width:1150px) {
+	.ul-nav #login-text,#signup-text,#nav-radio,#or{display: none;}
+	.queue-bar{
+		display: none;
+	}
+
+
+	.content-container{
+		justify-content: space-around;
+	}
+	.main-bar .container{
+		margin-right: -500px;
+	}
+	/* .main-section{
+		width: 90vw;
+		margin-bottom: -5000px;
+	} */
+	/* padding: 0px; */
+  }
+  @media screen and (max-width:990px){
+	 .main-section .main-bar .five{
+  		display: none;
+  	}
+	.four{
+	   display: none;
+   }
+  }
+  @media screen and (max-width:768px) {
+  	.ul-nav .hide, #login-text,#signup-text{display: none;}
+	.hide{
+		display: none;
+	}
+	.main-section .main-bar .four,.main-section .main-bar .three{
+		display: none;
+	}
+	.three, .two{
+		display: none;
+	}
+
+	.ul-nav .icon{
+  	padding: 0px;
+    }
+
+	.queue-bar{
+		display: none;
+	}
+	.content-container{
+		justify-content: space-around;
+		/* height: 70vh; */
+	}
+	.main-section{
+		width: 90vw;
+		margin-bottom: -500px;
+	}
+
+	.bottom-playbar .song{
+		display: none;
+
+	}
+	.bottom-playbar .music-navigation-panel{
+		margin-left: -350px;
+		margin-top: -20px;
+	}
+	.bottom-playbar .music-navigation-panel div{
+		margin-top: -20px;
+	}
+	.progress-bar{
+		margin-left: -875px;
+		margin-bottom: -20px;
+		width: 80vw;
+
+}
+
+}
+@media screen and (max-width:600px){
+	.main-section .main-bar .three{
+		display: none;
+	}
+	.two{
+		display: none;
+	}
+}
+
+:root{
+	--background-black:black;
+	--highlight-red:#b11a21;
+	--highlight2-white:#d9d9d9;
+	--hover-red2:#e0474c;
+	--hover-white2:#79807b;
+	--bright-white:rgb(247, 245, 245);
+	/* --comp-green:rgba(77, 204, 89,1); */
+}
+
+/*changing root font size to 10 for easier px
+to rem calculations*/
+html{
+	font-size: 14px;
+	height: 100%;
+    margin:0px;
+	height: 100%;
+    width: 100%;
+	padding: 0px;
+}
+body{
+	/* font-size: 10px; */
+	margin:0px;
+	height: 100%;
+    width: 100%;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--background-blue);
+	/* opacity: 0.5; */
+
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* navbar */
+header nav{
+   overflow: hidden;
+   position: fixed;
+    width: 100%;
+    top: 0;
+	z-index:3;
+	/* height: 900px; */
+	/* margin-bottom: 3rem; */
+}
+.right{
+	float: right;
+}
+.ul-nav{
+	/*display: inline;*/
+	background-color: var(--highlight2-white);
+	height:50px;
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+}
+.ul-nav li{
+	display: inline;
+	margin:0 1rem 0 1rem;
+	position: relative;
+
+}
+.icon{
+	font-weight: 900;
+	/* font-size: 2 */
+}
+.fas{
+	padding: 3px;
+}
+
+
+
+
+.ul-nav a{
+	display: inline-block;
+	width:auto;
+	text-decoration: none;
+	color:var(--highlight-red);
+	font-size: 2rem;
+	/* overflow: hidden; */
+}
+.ul-nav a:hover{
+	color:var(--hover-red2);
+}
+.ul-nav a:active{
+	color:white;
+}
+#nav-logo{
+	height: 20px;
+	width: 20px;
+}
+/* dropdown Menu */
+.dropbtn {
+  color: var(--highlight-red);
+  background-color: var(--highlight2-white);
+  /* display: none; */
+  padding: 0px 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width:150px;
+}
+.dropdown select{
+width: 150px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: var(--hover-red2);}
+
+/* Show the dropdown menu on hover */
+.dropbtn:hover .dropdown-content {display: inline-block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: var(--hover-red2);}
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* search section */
+
+.search-section input[type=text] {
+  display: block;
+  height: 2rem;
+  position: fixed;
+  background-color: var(--highlight2-white);
+  top:3rem;
+  left:3%;
+  outline: none;
+  border-radius: 20px;
+  padding: 6px;
+  padding-left: 10px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  width: 60%;
+}
+.search-section input[type=text]:hover {
+	background-color: var(--bright-white);
+
+}
+
+#or{
+	font-size: 1.5rem;
+	color: #b8b8b6;
+	position: fixed;
+	top:55px;
+	left:64%;
+}
+
+.search-section{
+	width: 100%;
+	z-index: 3;
+	height: 4rem;
+	background-color: var(--highlight-red);
+	position: fixed;
+	top:3rem;
+}
+.surprise-button{
+	background-color: var(--highlight2-white);
+	height: 2.7rem ;
+	width: 25%;
+	text-align: center;
+	border-radius: 20px;
+	margin-top: 8px;
+	color: var(--highlight-red);
+	position: fixed;
+    top:3rem;
+    left:70%;
+	box-shadow: 3px 3px 6px var(--hover-red2);
+}
+.surprise-button:hover{
+	background-color: var(--bright-white);
+}
+.surprise-button span{
+	line-height: 2.7rem;
+	padding: 13px;
+	font-size: 1.5rem;
+	margin: auto;
+}
+
+.content-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 90vh;
+	width:99vw;
+
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* main seaction */
+main{
+    height: 1200vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    margin-top: 98px;
+    /* bottom: 50px; */
+    /* margin-bottom: 50px; */
+    /* z-index:11; */
+    background-color: black;/*remove*/
+}
+main .cover{
+    height: 30vh;
+    min-height: 380px;
+    width:100vw;
+    background-color: grey;
+    background-image: url("https://i.scdn.co/image/dbaf7f3e34a1fc0f3ec6ae165b467ad6739e0c59");
+    background-size: cover;
+    background-position: top;
+    /* background-image: */
+    /* linear-gradient(to bottom, grey, rgba(0,0,0,0.2), */
+    /* url("https://i.scdn.co/image/dbaf7f3e34a1fc0f3ec6ae165b467ad6739e0c59"); */
+}
+.artist-name{
+    font-size: 5rem;
+    color: white;
+    position: relative;
+    font-weight: bold;
+    top:200px;
+    left: 90px;
+}
+
+.buttons div{
+    width: 120px;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    line-height: 40px;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    color: white;
+    top:200px;
+    left:90px;
+    height: 40px;
+    border-radius:1000px;
+    background-color: rgb(66,175,67);
+    transition: all 33ms cubic-bezier(.3,0,0,1);
+}
+.buttons .play:hover{
+    transform: scale(1.06);
+    background-color: rgb(80,212,79);
+}
+.buttons .follow{
+    position: relative;
+    left:125px;
+    background-color: black;
+    border: 1px solid #535353;
+}
+.buttons .follow:hover{
+    transform: scale(1.06);
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width: 99vw;
+    background-color: black;
+    padding: 8px;
+}
+.section .title h3{
+    font-size: 2rem;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing: 0.12rem;
+    margin-left:80px;
+}
+
+.section .song-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.section .song-container .song{
+    width: 90%;
+    min-height: 5em;
+    /* margin:4px; */
+    /* min-width: px; */
+    background-color: orange;
+    color: white;
+    line-height: 5em;
+}
+.section .song i{
+    font-size: 1.5rem;
+    position: relative;
+    color: white;
+    left :16px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    visibility: hidden;
+    top:4px;
+}
+.section .song:hover i{
+    visibility: visible;
+}
+.section .song:hover{
+    background-color: rgba(177, 26, 34,0.3);
+}
+.section .song-name{
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.section .song-img{
+    height: 4em;
+    width: 4em;
+    display: inline-block;
+    vertical-align: middle;
+
+    margin: 4px 20px 4px 30px;
+}
+.section .time{
+    display: inline-block;
+    position: absolute;
+    right: 110px;
+    /* flex: 2; */
+
+
+    text-align: right;
+    /* left:65%; */
+
+}
+.section img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////// */
+/* BOTTOM PLAYER */
+
+.bottom-playbar{
+	width:100vw;
+	height: 10%;
+	position: fixed;
+	bottom: 0;
+	background-color: var(--highlight2-white);
+	z-index: 1;
+}
+
+.bottom-playbar .song{
+	width: 300px;
+	min-width: 300px;
+	height: 100%;
+	/* background-color: var(--highlight-red); */
+	position: relative;
+	left: 6px;
+	bottom:0px;
+}
+
+.bottom-playbar .music-navigation-panel{
+	width: 350px;
+	/* min-width: 300px; */
+	height: 60px;
+	/* background-color: blue; */
+	position: fixed;
+	left: 450px;
+	line-height: 60px;
+	bottom:6px;
+}
+.music-navigation-panel div{
+	display: inline-block;
+	font-size: 2rem;
+	border-radius: 50%;
+	margin-left:30px;
+	/* margin-right: px; */
+	color: var(--highlight-red);
+}
+.music-navigation-panel div:hover{
+color: var(--hover-red2);
+}
+
+#shuffle-button,#loop-button{
+	font-size: 1.3rem;
+}
+.progress-bar{
+	width:500px;
+	border-radius: 20px;
+	height: 8px;
+	background-color: rgb(64,64,64);
+	position: absolute;
+	bottom: 30px;
+	left:900px;
+	z-index: 2;
+}
+#albumart{
+	height: 55px;
+	width:55px;
+	border-radius: 4px;
+	position: relative;
+	top:7px;
+	left:6px;
+}
+#song-name #artist{
+	color: grey
+}
+#song-name{
+	height: 55px;
+	line-height: 55px;
+	width: 80%;
+	/* background-color: pink; */
+	position: relative;
+	bottom: 50px;
+	font-size: 1.5rem;
+	left:80px;
+	transition: 0.6s ease-out;
+
+}
+#song-name:hover{
+	text-decoration: underline;
+}
+#song-name i:hover{
+	color: var(--highlight-red);
+	text-decoration: none;
+}
+
+#song-name i{
+margin-left: 50px;
+}
+
+#albumart img{
+	height: 100%;
+	width:100%;
+	transition: 0.1s ease-out;
+}
+#albumart img:hover{
+transform: scale(1.1);
+}
+.progress .fa-circle{
+	color: var(--bright-white);
+	/* box-shadow: 2px 2px 4px grey; */
+	border-radius: 50%;
+	filter: drop-shadow(-2px -2px 4px #grey);
+	font-size: 1.3rem;
+	position: relative;
+ 	bottom:9px;
+	left:90%;
+	/* display: none; */
+	/* z-index: 3; */
+}
+.progress{
+	border-radius: 20px;
+	height: 8px;
+	width:31.4%;
+	float: left;
+	/* background-c*/
+	background: rgb(251,105,110);
+	background: linear-gradient(90deg, rgba(251,105,110,1) 32%, rgba(177,26,33,1) 84%);
+	position: relative;
+	/* bottom: 30px; */
+	left:0px;
+	z-index: 2;
+}
+
+/* .progress-bar .circle:ho{
+	display: none;
+} */
+.progress:hover .circle .fa-circle{
+	color: rgba(0,100,156,1);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */

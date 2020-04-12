@@ -1,3 +1,4 @@
+
 /* *theme colors */
 
 @media screen and (max-width:1150px) {
@@ -176,12 +177,14 @@ header nav{
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   border: none;
+  width:150px;
 }
 .dropdown {
   position: relative;
   display: inline-block;
-  width:auto;
+  width:150px;
 }
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -787,3 +790,15 @@ transform: scale(1.1);
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

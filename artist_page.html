@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flowplayer</title>
+	<link rel="icon" href="play-circle-regular.svg">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles_artist.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/71732c9d38.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul class="ul-nav">
+				<li class="icon">
+					<a href="Homepage_beta.html"><i class="far fa-play-circle"></i>
+						Flowplayer
+					</a>
+				</li>
+			<span class="hide">
+
+				<li>
+					<div class="dropdown">
+					  <select id="dropdown-menu"class="dropbtn">
+						  <option value="default">
+						  Browse<i class="fas fa-chevron-down" style="font-size:1.5rem;"></i>
+					  	</option>
+						<div class="dropdown-content">
+							<option value="Featured-Playlists">Featured-Playlists</option>
+	  					  <option value="Top-Artists">Top-Artists</option>
+	  					  <option value="New-Releases">New-Releases</option>
+	  					  <option value="Weekly-Top-Songs">Weekly-Top-Songs</option>
+	  					  <option value="All-Albums">All-Albums</option>
+	  					  <option value="Surprise-me">Surprise Me!</option>
+  					  	</div>
+
+					  </select>
+
+					</div>
+				</li>
+				<li><a href="#">My Music</a></li>
+				<li id="nav-radio"><a href="#">Radio</a></li>
+			</span>
+				<li id="login" class="right"><a href="#"><i class="fas fa-user"></i>&nbsp;<span id="login-text">Login</span></a></li>
+				<li id="signup" class="right"><a href="#"><i class="fas fa-user-plus"></i>&nbsp;<span id="signup-text">Sign-up</span></a></li>
+			</ul>
+		</nav>
+<section class="search-section">
+	<input type="text" placeholder="Search for Artists, Songs, Podcasts and more...">
+
+	<span id="or" class="hide">&nbsp; &nbsp; &nbsp;or</span>
+	<div class="surprise-button hide">
+		<span>Surprise Me!</span>
+	</div>
+</section>
+</header>
+
+<main>
+    <div class="cover">
+        <div class="artist-name">
+            Pink Floyd
+        </div>
+        <div class="buttons">
+            <div class="play button">
+                PLAY
+            </div>
+            <div class="follow button">
+                FOLLOW
+            </div>
+        </div>
+
+    </div>
+
+<!-- POPULAR SONGS -->
+    <div class="popular section">
+        <div class="title">
+            <h3>Popular Songs</h3>
+        </div>
+        <div class="song-container">
+            <div class="song">
+                <i class="fas fa-play"></i>
+                <div class="song-img">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273288d32d88a616b9a278ddc07">
+                </div>
+                <span class="song-name">
+                    Comfortably Numb
+                </span>
+                <div class="time">
+                    6:24
+                </div>
+            </div>
+            <div class="song">
+                <i class="fas fa-play"></i>
+                <div class="song-img">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273f05e5ac32fdd79d100315a20">
+                </div>
+                <span class="song-name">
+                    Time
+                </span>
+                <div class="time">
+                    6:54
+                </div>
+            </div>
+            <div class="song">
+                <i class="fas fa-play"></i>
+                <div class="song-img">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273f05e5ac32fdd79d100315a20">
+                </div>
+                <span class="song-name">
+                    Money
+                </span>
+                <div class="time">
+                    4:54
+                </div>
+            </div>
+            <div class="song">
+                <i class="fas fa-play"></i>
+                <div class="song-img">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273d8fa5ac6259dba33127b398a">
+                </div>
+                <span class="song-name">
+                    Wish You Were Here
+                </span>
+                <div class="time">
+                    5:34
+                </div>
+            </div>
+            <div class="song">
+                <i class="fas fa-play"></i>
+                <div class="song-img">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273f05e5ac32fdd79d100315a20">
+                </div>
+                <span class="song-name">
+                    Money
+                </span>
+                <div class="time">
+                    4:54
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Albums -->
+
+    <div class="popular section">
+        <div class="title">
+            <h3> ALBUMS</h3>
+        </div>
+        <div class="song-container">
+            <div class="song">
+                <i class="fas fa-play"></i>
+                <div class="song-img">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273288d32d88a616b9a278ddc07">
+                </div>
+                <span class="song-name">
+                    Comfortably Numb
+                </span>
+                <div class="time">
+                    6:24
+                </div>
+            </div>
+            <div class="song">
+                <i class="fas fa-play"></i>
+                <div class="song-img">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273f05e5ac32fdd79d100315a20">
+                </div>
+                <span class="song-name">
+                    Time
+                </span>
+                <div class="time">
+                    6:54
+                </div>
+            </div>
+            <div class="song">
+                <i class="fas fa-play"></i>
+                <div class="song-img">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273f05e5ac32fdd79d100315a20">
+                </div>
+                <span class="song-name">
+                    Money
+                </span>
+                <div class="time">
+                    4:54
+                </div>
+            </div>
+            <div class="song">
+                <i class="fas fa-play"></i>
+                <div class="song-img">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273d8fa5ac6259dba33127b398a">
+                </div>
+                <span class="song-name">
+                    Wish You Were Here
+                </span>
+                <div class="time">
+                    5:34
+                </div>
+            </div>
+            <div class="song">
+                <i class="fas fa-play"></i>
+                <div class="song-img">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273f05e5ac32fdd79d100315a20">
+                </div>
+                <span class="song-name">
+                    Money
+                </span>
+                <div class="time">
+                    4:54
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- BOTTOM PLAYBAR -->
+<section class="bottom-playbar">
+	<div class="song" id="bottom-song">
+		<div id="albumart">
+			<img src="https://c.saavncdn.com/261/The-Dark-Side-of-the-Moon-English-1973-500x500.jpg">
+		</div>
+		<div id="song-name">
+			Time - <span id="artist">Pink Floyd</span><i class="far fa-heart"></i>
+		</div>
+	</div>
+
+	<div class="music-navigation-panel">
+		<div id="shuffle-button">
+			<i class="fas fa-random"></i>
+		</div>
+
+		<div id="back-button">
+			<i class="fas fa-step-backward"></i>
+		</div>
+
+		<div id="play-button">
+			<i class="fas fa-play"></i>
+		</div>
+
+		<div id="fwd-button">
+			<i class="fas fa-step-forward"></i>
+		</div>
+
+		<div id="loop-button">
+			<i class="fas fa-redo-alt"></i>
+		</div>
+
+	</div>
+	<div class="progress-bar">
+		<div class="progress">
+			<div class="circle">
+				<i class="fas fa-circle"></i>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+</div>
+</body>
+</html>
