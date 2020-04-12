@@ -71,10 +71,7 @@
 		width: 80vw;
 
 }
-a{
-    text-decoration: none;
-    color: none;
-}
+
 }
 @media screen and (max-width:600px){
 	.main-section .main-bar .three{
@@ -300,7 +297,7 @@ width: 150px;
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* main seaction */
 main{
-    height: 230vh;
+    height: 235vh;
     width:100%;
     display: flex;
     flex-direction: column;
