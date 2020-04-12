@@ -1,5 +1,6 @@
 
-/* *theme colors */
+/* media queries */
+/* desktop first approach */
 
 @media screen and (max-width:1150px) {
 	.ul-nav #login-text,#signup-text,#nav-radio,#or{display: none;}
@@ -14,12 +15,10 @@
 	.main-bar .container{
 		margin-right: -500px;
 	}
-	/* .main-section{
-		width: 90vw;
-		margin-bottom: -5000px;
-	} */
-	/* padding: 0px; */
+
   }
+
+
   @media screen and (max-width:990px){
 	 .main-section .main-bar .five{
   		display: none;
@@ -28,6 +27,8 @@
 	   display: none;
    }
   }
+
+
   @media screen and (max-width:768px) {
   	.ul-nav .hide, #login-text,#signup-text{display: none;}
 	.hide{
@@ -75,6 +76,9 @@
 }
 
 }
+
+
+
 @media screen and (max-width:600px){
 	.main-section .main-bar .three{
 		display: none;
@@ -84,18 +88,18 @@
 	}
 }
 
+
+
 :root{
 	--background-blue:black;
-	--highlight-purple:#b11a21;
+	--highlight-red:#b11a21;
 	--highlight2-white:#d9d9d9;
-	--hover-purple2:#e0474c;
+	--hover-red2:#e0474c;
 	--hover-white2:#79807b;
 	--bright-white:rgb(247, 245, 245);
 	/* --comp-green:rgba(77, 204, 89,1); */
 }
 
-/*changing root font size to 10 for easier px
-to rem calculations*/
 html{
 	font-size: 14px;
 	height: 100%;
@@ -109,6 +113,10 @@ body{
 	background-color: var(--background-blue);
 	/* opacity: 0.5; */
 
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -154,12 +162,12 @@ header nav{
 	display: inline-block;
 	width:auto;
 	text-decoration: none;
-	color:var(--highlight-purple);
+	color:var(--highlight-red);
 	font-size: 2rem;
 	/* overflow: hidden; */
 }
 .ul-nav a:hover{
-	color:var(--hover-purple2);
+	color:var(--hover-red2);
 }
 .ul-nav a:active{
 	color:white;
@@ -170,7 +178,7 @@ header nav{
 }
 /* dropdown Menu */
 .dropbtn {
-  color: var(--highlight-purple);
+  color: var(--highlight-red);
   background-color: var(--highlight2-white);
   /* display: none; */
   padding: 0px 16px;
@@ -202,13 +210,13 @@ header nav{
   display: block;
 }
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {color: var(--hover-purple2);}
+.dropdown-content a:hover {color: var(--hover-red2);}
 
 /* Show the dropdown menu on hover */
 .dropbtn:hover .dropdown-content {display: inline-block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {color: var(--hover-purple2);}
+.dropdown:hover .dropbtn {color: var(--hover-red2);}
 
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -248,7 +256,7 @@ header nav{
 	width: 100%;
 	z-index: 2;
 	height: 4rem;
-	background-color: var(--highlight-purple);
+	background-color: var(--highlight-red);
 	position: fixed;
 	top:3rem;
 }
@@ -259,11 +267,11 @@ header nav{
 	text-align: center;
 	border-radius: 20px;
 	margin-top: 8px;
-	color: var(--highlight-purple);
+	color: var(--highlight-red);
 	position: fixed;
     top:3rem;
     left:70%;
-	box-shadow: 3px 3px 6px var(--hover-purple2);
+	box-shadow: 3px 3px 6px var(--hover-red2);
 }
 .surprise-button:hover{
 	background-color: var(--bright-white);
@@ -283,11 +291,12 @@ header nav{
 	width:99vw;
 
 }
+
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* main section */
 
 main
-{	margin: 13% 0.5% 0% 2%;
+{	margin: 10% 0.5% 0% 2%;
 	height: auto;
 	min-height: 100vh;
 	/* z-index: 4; */
@@ -298,21 +307,23 @@ main
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	/* border:8px solid var(--highlight-purple); */
+	/* border:8px solid var(--highlight-red); */
 	/* border: 3px outset #b11a21;
 	border-radius: 8px; */
 	/* border-radius: 20px; */
 	border-radius: 8px;
 	box-shadow: 4px 4px 6px rgba(31, 54, 29);
-	background-color: var(--hover-white2);
+	background-color: black;
 	padding: 12px;
 	overflow: auto;
 }
 /* #radio-nav{
 	display: none;
 } */
+/* #radio- */
 main .main-bar{
 	min-height: 210px;
+
 	margin-top: 50px;
 	margin: 90px 0 90px 0;
 	display: flex;
@@ -356,7 +367,7 @@ main .heading{
 	font-size: 2rem;
 	font-weight: 600;
 	margin: 12px;
-	color: var(--highlight-purple);
+	color: var(--highlight-red);
 	margin-left: 27px;
 	letter-spacing: 0.1rem;
 
@@ -365,6 +376,7 @@ main .heading{
 	font-size: 1.3rem;
 	font-weight: 500;
 	margin: 14px;
+	color:black;
 	/* display: inline-block; */
 	width: auto;
 	/* margin-top:40px; */
@@ -376,7 +388,7 @@ main .heading{
 	/* letter-spacing: 0.2rem; */
 }
 .icon:hover .item-name{
-	color: var(--highlight-purple);
+	color: var(--highlight-red);
 }
 #carousel{
 	background-color: var(--hover-white2);
@@ -417,9 +429,9 @@ transform: translateX(2%);
 .image-wrapper img{
 	height: 100%;
 	width: 100%;
-	border: 10px solid black;
+	/* border: 10px solid blue; */
 	border-radius: 20px;
-
+	/* background-image: grey; */
 }
 
 body {
@@ -444,7 +456,7 @@ body {
   display: flex;
   height: 260px;
   width: 260px;
-  background-color: #17141d;
+  background-color: var(--highlight2-white);
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
 /*   margin-left: -50px; */
@@ -498,6 +510,7 @@ body {
 	justify-content: space-between;
 	min-height: 400px;
 	margin-bottom: 0px;
+	margin-top: 0px;
 }
 #top-charts img{
 	margin-top: -80px;
@@ -529,16 +542,9 @@ width:100%;
 /* playing queue on right */
 
 aside{
-	/* border-radius: 20px; */
-	margin: 13% 2% 0 0.5%;
-	/* border:8px solid var(--highlight-purple); */
-	/* border: 3px outset #b11a21;
+	margin: 7% 2% 0 0.5%;
 	border-radius: 8px;
-	flex-grow: 3;
-	/* float: right; */
-	border-radius: 8px;
-	/* z-index: 4; */
-	height: 84%;
+	height: 80%;
 	min-height: 103vh;
 
 	width: 25%;
@@ -578,13 +584,13 @@ aside .song-container2{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 	margin-left:0.5rem;
-	color: var(--highlight-purple);
+	color: var(--highlight-red);
 
 	/* display: ; */
 	z-index:0;
 }
 .aside-heading h4:hover{
-color: var(--hover-purple2);
+color: var(--hover-red2);
 }
 
 .queue-bar .song{
@@ -597,7 +603,7 @@ color: var(--hover-purple2);
 	/* padding: 20px */
 	/* vertical-align:; */
 
-	background-color: var(--highlight-purple);
+	background-color: var(--highlight-red);
 }
 aside .song-container p::before{
 	content: '';
@@ -624,7 +630,7 @@ aside .song-container p{
 }
 aside .song-container p i{
 	font-size: 1.2rem;
-	margin-left: 70px;
+	margin-left: 55px;
 	color: white;
 }
 aside .song-container2 p::before{
@@ -652,7 +658,7 @@ aside .song-container2 p{
 }
 aside .song-container2 p i{
 	font-size: 1.2rem;
-	margin-left: 70px;
+	margin-left: 50px;
 	color: white;
 }
 
@@ -672,7 +678,7 @@ aside .song-container2 p i{
 	width: 300px;
 	min-width: 300px;
 	height: 100%;
-	/* background-color: var(--highlight-purple); */
+	/* background-color: var(--highlight-red); */
 	position: relative;
 	left: 6px;
 	bottom:0px;
@@ -694,10 +700,10 @@ aside .song-container2 p i{
 	border-radius: 50%;
 	margin-left:30px;
 	/* margin-right: px; */
-	color: var(--highlight-purple);
+	color: var(--highlight-red);
 }
 .music-navigation-panel div:hover{
-color: var(--hover-purple2);
+color: var(--hover-red2);
 }
 
 #shuffle-button,#loop-button{
@@ -738,7 +744,7 @@ color: var(--hover-purple2);
 	text-decoration: underline;
 }
 #song-name i:hover{
-	color: var(--highlight-purple);
+	color: var(--highlight-red);
 	text-decoration: none;
 }
 
@@ -786,11 +792,11 @@ transform: scale(1.1);
 	display: none;
 } */
 .progress:hover .circle .fa-circle{
-	color: rgba(0,100,156,1);
+	color: var(--highlight-red);
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
-© 2020 GitHub, Inc.
+/* © 2020 GitHub, Inc.
 Terms
 Privacy
 Security
@@ -801,4 +807,4 @@ Pricing
 API
 Training
 Blog
-About
+About */

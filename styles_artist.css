@@ -5,6 +5,7 @@
 	}
 
 
+
 	.content-container{
 		justify-content: space-around;
 	}
@@ -70,12 +71,18 @@
 		width: 80vw;
 
 }
-
+a{
+    text-decoration: none;
+    color: none;
+}
 }
 @media screen and (max-width:600px){
 	.main-section .main-bar .three{
 		display: none;
 	}
+    .song .time{
+        visibility:hidden;
+    }
 	.two{
 		display: none;
 	}
@@ -293,7 +300,7 @@ width: 150px;
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* main seaction */
 main{
-    height: 1200vh;
+    height: 230vh;
     width:100%;
     display: flex;
     flex-direction: column;
@@ -339,12 +346,12 @@ main .cover{
     left:90px;
     height: 40px;
     border-radius:1000px;
-    background-color: rgb(66,175,67);
+    background-color: var(--highlight-red);
     transition: all 33ms cubic-bezier(.3,0,0,1);
 }
 .buttons .play:hover{
     transform: scale(1.06);
-    background-color: rgb(80,212,79);
+    background-color: var(--hover-red2);
 }
 .buttons .follow{
     position: relative;
@@ -386,7 +393,7 @@ main .cover{
     min-height: 5em;
     /* margin:4px; */
     /* min-width: px; */
-    background-color: orange;
+    /* background-color: orange; */
     color: white;
     line-height: 5em;
 }
@@ -423,19 +430,60 @@ main .cover{
     display: inline-block;
     position: absolute;
     right: 110px;
-    /* flex: 2; */
-
-
     text-align: right;
-    /* left:65%; */
-
 }
+
 .section img{
     width: 100%;
     height: 100%;
 }
 
+.album-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+    margin-left: 80px;
+}
+.album-container i{
+    font-size: 5rem;
+    color: white;
+    position: relative;
+    left:135px;
+    top:65px;
+    z-index: -1;
 
+}
+.card{
+    margin: 20px;
+    transition: all 33ms cubic-bezier(.3,0,0,1);
+
+}
+.card:hover{
+    transform: scale(1.2);
+
+}
+.card:hover .album-name{
+    color: var(--hover-red2);
+
+}
+.card:hover .album-art{
+    opacity: 0.5;
+
+}
+
+.album-art{
+    height: 200px;
+    width: 200px;
+
+}
+.album-name{
+    font-size: 1.3rem;
+    color: white;
+    display: block;
+    text-align: center;
+}
 
 
 /* /////////////////////////////////////////////////////////////// */
@@ -568,7 +616,7 @@ transform: scale(1.1);
 	display: none;
 } */
 .progress:hover .circle .fa-circle{
-	color: rgba(0,100,156,1);
+	color: var(--highlight-red);
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
